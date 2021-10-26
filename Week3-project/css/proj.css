@@ -1,9 +1,19 @@
+.body {
+    background-color: rgb(231, 224, 214);
+
+}
+
+
 img  {
 
-width: 50%;
+width: 48%;
 margin: auto;
 display: block;
 
+}
+
+.navbar{
+    background-color: #b39075;
 }
 
 h5 {
@@ -13,3 +23,16 @@ h5 {
 
 }
 
+h3 {
+   
+    margin-right: auto;
+    padding-left: 0px;
+
+}
+
+.fab {
+    margin: 9px;
+    font-size: 35px;
+    text-align: center;
+
+}
