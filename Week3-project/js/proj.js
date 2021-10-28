@@ -5,6 +5,7 @@ var plants = [
         img: "2.jpg",
         description: "Potts are a very successful and strong indoor plant. It is characterized by a beautiful color and spreads relatively quickly and does not require much care. It can be placed in homes or different work environments"
     },
+    
     {
         title: 'Vicks Robusta Mottled in a Ceramic Pot.',
         price: '110 S.R',
@@ -146,3 +147,12 @@ $('#Tec').click(() => {
     window.sessionStorage.setItem("Key", "seeds")
     window.location.href = "details.html"
 });
+
+
+// botton add to cart
+$('#bt1').click(()=>{
+    window.localStorage.setItem("cart", JSON.stringify(cart[0]))
+    console.log(cart[0]);
+    window.location.href="cart.html"
+}
+)

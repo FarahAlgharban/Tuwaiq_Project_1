@@ -14,8 +14,28 @@
                   <p>${currPlant.description}</p>
                 </blockquote>
              </figure>
+             <button  class="btn"><a class="btn btn-success" href="cart.html">Add to cart</button></a> 
+            
+             <input type="button" id='addOne' class="btn btn-outline-success" value="+">
+             <label id="qty">1</label>
+             <input type="button" id='subOne' class="btn btn-outline-danger" value="-">
         </div>
         `)
+
+        $('#addOne').click(function () {
+            // console.log('inside addOne function');
+            let qty = parseInt($('#qty').text());
+            qty += 1;
+            $('#qty').text(qty);
+            // console.log(qty);
+          })
+          $('#subOne').click(function () {
+            let qty = parseInt($('#qty').text());
+            qty -= 1;
+            if (qty < 1)
+              qty = 1;
+            $('#qty').text(qty);
+          })
 
     //   const currBowl = JSON.parse(window.localStorage.getItem("bowl"))
 
