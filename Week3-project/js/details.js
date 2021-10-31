@@ -14,11 +14,6 @@
                   <p>${currPlant.description}</p>
                 </blockquote>
              </figure>
-             <button  class="btn"><a class="btn btn-success" href="cart.html">Add to cart</button></a> 
-            
-             <input type="button" id='addOne' class="btn btn-outline-success" value="+">
-             <label id="qty">1</label>
-             <input type="button" id='subOne' class="btn btn-outline-danger" value="-">
         </div>
         `)
 

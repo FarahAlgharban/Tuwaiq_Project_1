@@ -55,75 +55,78 @@
       <button class="btn"><a class="btn btn-success" href="login.html">Sign in</button></a>
     </div>
   </nav>
+  <hr>
 
 
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cart">Cart (<span
+          class="total-count"></span>)</button> <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+  </div>
+  </div>
+  <hr>
 
 
-
-  
-  <!------ Include the above in your HEAD tag ---------->
-
-  <script src="https://use.fontawesome.com/c560c025cf.js"></script>
+  <!-- Main -->
   <div class="container">
-    <div class="card shopping-cart">
-      <div class="card-header bg-dark text-light">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        Shipping cart
-        <a href="index.html" class="btn btn-outline-info btn-sm pull-right">Continiu shopping</a>
-        <div class="clearfix"></div>
-      </div>
-      <div class="card-body">
-        <!-- PRODUCT -->
-
-
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-2 text-center">
-            <img class="img-responsive" id= "potts" src="img/2.jpg" alt="" width="120" height="80">
-          </div>
-          <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
-            <h4 class="product-name"><strong>Potts Marble Queen plant in a hanging pot</strong></h4>
-          </div>
-          <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
-            <div class="col-3 col-sm-3 col-md-6  text-md-right" style="padding-top: 5px">
-               <h6><strong>85 S.R  </strong></h6>
-            </div>
-      
-            <div class="col-2 col-sm-2 col-md-2 text-right">
-              <button type="button" id="potts" class="btn btn-outline-danger btn-xs">
-                <i class="fa fa-trash" aria-hidden="true"></i>
-              </button>
-            </div>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="img/2.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Potts Marble Queen plant in a hanging pot</h4>
+            <p class="card-text">Price: 85 SR</p>
+            <a href="#" data-name="Potts Marble Queen plant in a hanging pot" id="potts" data-price="85"
+              class="btn btn-success">Add to cart</a>
           </div>
         </div>
-        <hr>
-
-
-
-        <!-- END PRODUCT -->
-        <!-- PRODUCT -->
-        <div class="row">
-        
-        <hr>
-        <!-- END PRODUCT -->
-     
-
       </div>
-      <div class="card-footer">
-        <div class="coupon col-md-5 col-sm-5 no-padding-left pull-left">
-          <div class="row">
-            <div class="col-6">
-              <input type="text" class="form-control" placeholder="cupone code">
-            </div>
-            <div class="col-6">
-              <input type="submit" class="btn btn-default" value="Use cupone">
-            </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="img/3.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Vicks Robusta Mottled in a Ceramic Pot</h4>
+            <p class="card-text">Price: 110 SR</p>
+            <a href="#" data-name="Vicks Robusta Mottled in a Ceramic Pot" id="vicks" data-price="110"
+              class="btn btn-success">Add
+              to cart</a>
           </div>
         </div>
-        <div class="pull-right" style="margin: 10px">
-          <a href="" class="btn btn-success pull-right">Checkout</a>
-          <div class="pull-right" style="margin: 5px">
-            Total price: <b>85 S.R</b>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">The rib cage or (monstera) in a transparent plastic vase</h4>
+            <p class="card-text">Price: 65 SR</p>
+            <a href="#" data-name="The rib cage or (monstera) in a transparent plastic vase" data-price="65"
+              class="btn btn-success">Add to cart</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Order now</button>
         </div>
       </div>
     </div>
